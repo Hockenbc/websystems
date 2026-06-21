@@ -309,6 +309,111 @@ img, svg {
   line-height: 1.55;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 28px;
+  padding: 32px;
+}
+
+.about-sidebar h2,
+.about-sidebar h3 {
+  margin-top: 0;
+}
+
+.about-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  color: var(--text);
+}
+
+.about-sidebar ul li {
+  margin-bottom: 12px;
+}
+
+.contact-note {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.about-content ul {
+  list-style: disc inside;
+  margin: 18px 0 0;
+  padding-left: 18px;
+}
+
+.about-content p,
+.about-content li {
+  line-height: 1.75;
+}
+
+.auth-layout {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 160px);
+  padding: 32px;
+}
+
+.auth-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.form-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--gold), #d8b238);
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.form-button:hover {
+  transform: translateY(-1px);
+}
+
+.auth-note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.leaderboard-panel h2 {
+  margin-top: 0;
+}
+
 /* --- FOOTER --- */
 .site-footer {
   margin: 40px 32px 32px;
